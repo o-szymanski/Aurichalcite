@@ -1,6 +1,6 @@
 # Aurichalcite
 
-Library licensed by MIT for the purpose of uploading and testing the first project on nuget.com related to algorithms and other activities.
+MIT licensed application to test the performance of features and actions.
 
 ## Tech Stack
 
