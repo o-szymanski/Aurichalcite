@@ -1,10 +1,13 @@
-﻿namespace Aurichalcite
+﻿using BenchmarkDotNet.Running;
+
+namespace Aurichalcite
 {
     public class Program
     {
         public static void Main()
-        {
-            Console.WriteLine("Hello World!");
+        {        
+            _ = BenchmarkRunner.Run<Benchmark>();
+            Console.ReadKey();
         }
     }
 }
