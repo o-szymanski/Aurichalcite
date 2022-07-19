@@ -1,6 +1,6 @@
 # Aurichalcite
 
-MIT licensed application to test the performance of features and actions.
+Application to test the performance of features and actions.
 
 ## Tech Stack
 
