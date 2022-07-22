@@ -1,12 +1,13 @@
-﻿using BenchmarkDotNet.Running;
+﻿using Aurichalcite.Benchmarks;
+using BenchmarkDotNet.Running;
 
 namespace Aurichalcite
 {
     public class Program
     {
         public static void Main()
-        {        
-            _ = BenchmarkRunner.Run<Benchmark>();
+        {
+            BenchmarkRunner.Run<StringCreate>();
             Console.ReadKey();
         }
     }

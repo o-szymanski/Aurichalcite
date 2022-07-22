@@ -1,6 +1,6 @@
 # Aurichalcite
 
-Application to test the performance of features and actions.
+Application to test the performance of new features, actions and exercies. 
 
 ## Tech Stack
 

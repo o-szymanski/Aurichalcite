@@ -1,31 +1,31 @@
 ﻿using BenchmarkDotNet.Attributes;
 using System.Text;
 
-namespace Aurichalcite
+namespace Aurichalcite.Benchmarks
 {
     [MemoryDiagnoser]
-    public class Benchmark
+    public class StringCreate
     {
         [Benchmark]
-        public string CreateStrings()
+        public void CreateStrings()
         {
             string result = string.Empty;
             for (int i = 0; i < 100; i++)
             {
                 result += i;
             }
-            return result;
+            _ = result;
         }
 
-        [Benchmark(Baseline = true)]
-        public string CreateStringBuilder()
+        [Benchmark]
+        public void CreateStringBuilder()
         {
             StringBuilder stringBuilder = new();
             for (int i = 0; i < 100; i++)
             {
                 stringBuilder.Append(i);
             }
-            return stringBuilder.ToString();
+            _ = stringBuilder.ToString();
         }
     }
 }
